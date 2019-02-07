@@ -1,0 +1,82 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  Acciaiuoli:
+    Medici: &id006 {}
+  Albizzi:
+    Ginori: &id002 {}
+    Guadagni: &id003 {}
+    Medici: &id007 {}
+  Barbadori:
+    Castellani: &id001 {}
+    Medici: &id008 {}
+  Bischeri:
+    Guadagni: &id004 {}
+    Peruzzi: &id009 {}
+    Strozzi: &id014 {}
+  Castellani:
+    Barbadori: *id001
+    Peruzzi: &id010 {}
+    Strozzi: &id015 {}
+  Ginori:
+    Albizzi: *id002
+  Guadagni:
+    Albizzi: *id003
+    Bischeri: *id004
+    Lamberteschi: &id005 {}
+    Tornabuoni: &id018 {}
+  Lamberteschi:
+    Guadagni: *id005
+  Medici:
+    Acciaiuoli: *id006
+    Albizzi: *id007
+    Barbadori: *id008
+    Ridolfi: &id011 {}
+    Salviati: &id012 {}
+    Tornabuoni: &id019 {}
+  Pazzi:
+    Salviati: &id013 {}
+  Peruzzi:
+    Bischeri: *id009
+    Castellani: *id010
+    Strozzi: &id016 {}
+  Pucci: {}
+  Ridolfi:
+    Medici: *id011
+    Strozzi: &id017 {}
+    Tornabuoni: &id020 {}
+  Salviati:
+    Medici: *id012
+    Pazzi: *id013
+  Strozzi:
+    Bischeri: *id014
+    Castellani: *id015
+    Peruzzi: *id016
+    Ridolfi: *id017
+  Tornabuoni:
+    Guadagni: *id018
+    Medici: *id019
+    Ridolfi: *id020
+_node: &id022
+  Acciaiuoli: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: 53, wealth: 10}
+  Albizzi: {$C_i^D$: 0.2, degree: 3, priorates: 65, wealth: 36}
+  Barbadori: {$C_i^D$: 0.13333333333333333, degree: 2, priorates: n/a, wealth: 55}
+  Bischeri: {$C_i^D$: 0.2, degree: 3, priorates: 12, wealth: 44}
+  Castellani: {$C_i^D$: 0.2, degree: 3, priorates: 22, wealth: 20}
+  Ginori: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: n/a, wealth: 32}
+  Guadagni: {$C_i^D$: 0.26666666666666666, degree: 4, priorates: 21, wealth: 8}
+  Lamberteschi: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: 0, wealth: 42}
+  Medici: {$C_i^D$: 0.4, degree: 6, priorates: 53, wealth: 103}
+  Pazzi: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: n/a, wealth: 48}
+  Peruzzi: {$C_i^D$: 0.2, degree: 3, priorates: 42, wealth: 49}
+  Pucci: {$C_i^D$: 0.0, degree: 0, priorates: 0, wealth: 3}
+  Ridolfi: {$C_i^D$: 0.2, degree: 3, priorates: 38, wealth: 27}
+  Salviati: {$C_i^D$: 0.13333333333333333, degree: 2, priorates: 35, wealth: 10}
+  Strozzi: {$C_i^D$: 0.26666666666666666, degree: 4, priorates: 74, wealth: 146}
+  Tornabuoni: {$C_i^D$: 0.2, degree: 3, priorates: n/a, wealth: 48}
+adjlist_inner_dict_factory: &id021 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id021
+edge_attr_dict_factory: *id021
+graph: {}
+node_dict_factory: *id021
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id022
