@@ -2,5 +2,5 @@ networkx
 matplotlib
 scipy
 graphviz
-libgraphviz-dev
+graphviz-dev
 pygraphviz
