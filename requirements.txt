@@ -1,3 +1,4 @@
+pip==19.0.2
 networkx
 matplotlib
 scipy
