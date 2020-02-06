@@ -57,26 +57,108 @@ _adj:
     Medici: *id019
     Ridolfi: *id020
 _node: &id022
-  Acciaiuoli: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: 53, wealth: 10}
-  Albizzi: {$C_i^D$: 0.2, degree: 3, priorates: 65, wealth: 36}
-  Barbadori: {$C_i^D$: 0.13333333333333333, degree: 2, priorates: n/a, wealth: 55}
-  Bischeri: {$C_i^D$: 0.2, degree: 3, priorates: 12, wealth: 44}
-  Castellani: {$C_i^D$: 0.2, degree: 3, priorates: 22, wealth: 20}
-  Ginori: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: n/a, wealth: 32}
-  Guadagni: {$C_i^D$: 0.26666666666666666, degree: 4, priorates: 21, wealth: 8}
-  Lamberteschi: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: 0, wealth: 42}
-  Medici: {$C_i^D$: 0.4, degree: 6, priorates: 53, wealth: 103}
-  Pazzi: {$C_i^D$: 0.06666666666666667, degree: 1, priorates: n/a, wealth: 48}
-  Peruzzi: {$C_i^D$: 0.2, degree: 3, priorates: 42, wealth: 49}
-  Pucci: {$C_i^D$: 0.0, degree: 0, priorates: 0, wealth: 3}
-  Ridolfi: {$C_i^D$: 0.2, degree: 3, priorates: 38, wealth: 27}
-  Salviati: {$C_i^D$: 0.13333333333333333, degree: 2, priorates: 35, wealth: 10}
-  Strozzi: {$C_i^D$: 0.26666666666666666, degree: 4, priorates: 74, wealth: 146}
-  Tornabuoni: {$C_i^D$: 0.2, degree: 3, priorates: n/a, wealth: 48}
+  Acciaiuoli:
+    $C_i^D$: 0.06666666666666667
+    $c_i^E$: 0.13215731952853418
+    degree: 1
+    priorates: 53
+    wealth: 10
+  Albizzi:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.24396052967544765
+    degree: 3
+    priorates: 65
+    wealth: 36
+  Barbadori:
+    $C_i^D$: 0.13333333333333333
+    $c_i^E$: 0.21170574706479847
+    degree: 2
+    priorates: n/a
+    wealth: 55
+  Bischeri:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.2827943958713356
+    degree: 3
+    priorates: 12
+    wealth: 44
+  Castellani:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.2590200378423514
+    degree: 3
+    priorates: 22
+    wealth: 20
+  Ginori:
+    $C_i^D$: 0.06666666666666667
+    $c_i^E$: 0.0749245316027793
+    degree: 1
+    priorates: n/a
+    wealth: 32
+  Guadagni:
+    $C_i^D$: 0.26666666666666666
+    $c_i^E$: 0.2891171573226501
+    degree: 4
+    priorates: 21
+    wealth: 8
+  Lamberteschi:
+    $C_i^D$: 0.06666666666666667
+    $c_i^E$: 0.08879253113499551
+    degree: 1
+    priorates: 0
+    wealth: 42
+  Medici:
+    $C_i^D$: 0.4
+    $c_i^E$: 0.4303154258349922
+    degree: 6
+    priorates: 53
+    wealth: 103
+  Pazzi:
+    $C_i^D$: 0.06666666666666667
+    $c_i^E$: 0.04481493970386308
+    degree: 1
+    priorates: n/a
+    wealth: 48
+  Peruzzi:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.2757224374104833
+    degree: 3
+    priorates: 42
+    wealth: 49
+  Pucci:
+    $C_i^D$: 0.0
+    $c_i^E$: 1.5210930780184965e-24
+    degree: 0
+    priorates: 0
+    wealth: 3
+  Ridolfi:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.34155442590743645
+    degree: 3
+    priorates: 38
+    wealth: 27
+  Salviati:
+    $C_i^D$: 0.13333333333333333
+    $c_i^E$: 0.1459208416417183
+    degree: 2
+    priorates: 35
+    wealth: 10
+  Strozzi:
+    $C_i^D$: 0.26666666666666666
+    $c_i^E$: 0.355973032646045
+    degree: 4
+    priorates: 74
+    wealth: 146
+  Tornabuoni:
+    $C_i^D$: 0.2
+    $c_i^E$: 0.32584670416957395
+    degree: 3
+    priorates: n/a
+    wealth: 48
 adjlist_inner_dict_factory: &id021 !!python/name:builtins.dict ''
 adjlist_outer_dict_factory: *id021
 edge_attr_dict_factory: *id021
 graph: {}
+graph_attr_dict_factory: *id021
+node_attr_dict_factory: *id021
 node_dict_factory: *id021
 nodes: !!python/object:networkx.classes.reportviews.NodeView
   _nodes: *id022
